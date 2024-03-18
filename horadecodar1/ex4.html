@@ -3,14 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hora de codar 1</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        *{
+         font-family: 'Poppins', sans-serif;
+        }
+
+    </style>
 
 </head>
 <body>
+    <header class="container">
+        <h1 class="text-success">Área das figuras planas🕹️</h1>
+    </header>
+    <section class="container">
+        <div>
+            <h2>Clique aqui para calcular a area do retangulo</h2>
+            <button
+            type="button"
+            id="retangulo"
+            onclick="areaRetangulo()"
+            class="btn btn-success"
+            >Aqui😘</button>
+        </div>
+
+        <div>
+            <h2>Clique aqui para calcular a area do quadrado</h2>
+            <button            
+            type="button"
+            id="quadrado"
+            onclick="areaQuadrado()"
+            class="btn btn-success"
+            >Aqui😘</button>
+        </div>
+
+        <div>
+            <h2>Clique aqui para calcular a area do losango</h2>
+            <button            
+            type="button"
+            id="losango"
+            onclick="areaLosango()"
+            class="btn btn-success"
+            >Aqui😘</button>
+        </div>
+
+        <div>
+            <h2>Clique aqui para calcular a area do trapézio</h2>
+            <button
+            type="button"
+            id="trapezio"
+            onclick="areaTrapezio()"
+            class="btn btn-success"
+            >Aqui😘</button>
+        </div>
+
+        <div>
+            <h2>Clique aqui para calcular a área do paralelogramo</h2>
+            <button
+            type="button"
+            id="paralelogramo"
+            onclick="areaParalelogramo()"
+            class="btn btn-success"
+            >Aqui😘</button>
+        </div>
+
+        <div>
+            <h2>Clique aqui para calcular a área do Triangulo</h2>
+            <button            
+            type="button"
+            id="Triangulo"
+            onclick="areaTriangulo()"
+            class="btn btn-success"
+            >Aqui😘</button>
+        </div>
+
+        <div>
+            <h2>Clique aqui para calcular a área do circulo</h2>
+            <button            
+            type="button"
+            id="Circulo"
+            onclick="areaCirculo()"
+            class="btn btn-success"
+            >Aqui😘</button>
+        </div>
+    </section>
+
+    <div class="container">
+        <img src="/img/nazaré.gif">
+    </div>
+
+
+    <footer class="container"><a href="/horadecodar2/index.html" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-success">Hora de codar 2</a></footer>
+    
+
     <script>
-        /* Areas das figuras planas */
-        
+        /* áreas das figuras planas */
+        //retangulo
+        function areaRetangulo(){
+            let base = parseInt(prompt("Digite o valor da base"));;
+            let altura = parseInt(prompt("Digite o valor da altura"));;
+            let resultado = base * altura;
+            alert("O valor da área do retângulo é " + resultado);
+        }
+        //quadrado
+        function areaQuadrado(){
+            let lado1 = parseInt(prompt("Digite o valor de um lado"));
+            let lado2 = parseInt(prompt("Digite o valor do outro lado"));
+            let resultado1 = lado1 * lado2 ** 2;
+            alert("O valor da área do quadrado é " + resultado1);
+        }
+        //losango
+        function areaLosango(){
+            let diagonalMaior = parseInt(prompt("Digite o valor da diagonal maior"));
+            let diagonalMenor = parseInt(prompt("Digite o valor da diagonal menor"));
+            let resultado3 = diagonalMaior * diagonalMenor / 2;
+            alert("O valor da área do losango é " + resultado3);
+        }
+
+        //trapézio
+        function areaTrapezio(){
+            let baseMaior = parseInt(prompt("Digite o valor da base maior"));
+            let baseMenor = parseInt(prompt("Digite o valor da base menor"));
+            let altura = parseInt(prompt("Digite o valor da altura"));
+            let resultado2 = ((baseMaior + baseMenor) * altura) / 2;
+            alert("O valor da área do Trapézio é " + resultado2);
+        }
+        //paralelogramo
+        function areaParalelogramo(){
+            let base2 = parseInt(prompt("Digite o valor da base"));
+            let altura2 = parseInt(prompt("Digite o valor da altura"));
+            let resultado4 = base2 * altura2;
+            alert("O valor da área do Paralelogramo é " + resultado4);
+        }
+        //triangulo
+        function areaTriangulo(){
+            let base3 = parseInt(prompt("Digite o valor da base"));
+            let altura3 = parseInt(prompt("Digite o valor da altura"));
+            let resultado5 = base3 * altura3 / 2;
+            alert("O valor da área do Triângulo é " + resultado5);
+        }
+        //Circulo
+        function areaCirculo(){
+            let raio = parseInt(prompt("Digite o valor do raio "));
+            let resultado6 = Math.PI * (raio * raio);
+            alert("O valor da área do Circulo é " + resultado6);
+        }
     </script>
 </body>
 </html>
