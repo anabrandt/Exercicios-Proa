@@ -1,8 +1,8 @@
 # Exercicios feitos no 💙instituto proa💙
 
-## Exercícios de Lógica - Hora de Codar 1!
+## 
 
-<h3>:small_orange_diamond:	Exercícios sobre Operadores Matemáticos em JavaScript</h3>
+<h3>:small_orange_diamond: Exercícios de Lógica - Hora de Codar 1,	exercícios sobre Operadores Matemáticos em JavaScript</h3>
 
 Variável e Exibição de Valor
 Saudação Personalizada
