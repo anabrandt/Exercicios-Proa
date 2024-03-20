@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio8</title>
+
+</head>
+<body>
+    <h1>Insira suas notas do semestre para calcularmos a média</h1>
+    <button onclick="insiraValor1()"
+    class="btn btn-success"
+    >Inserir Valores</button>
+    <!-- Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente" -->
+    <script>
+            function insiraValor1(){
+                if (number1 >= 0 && number1 < 10 &&
+                number2 >= 0 && number2 < 10 &&
+                number3 >= 0 && number3 < 10 &&
+                number4 >= 0 && number4 < 10) {
+                // Calcula a média
+                let calcmedia = (number1 + number2 + number3 + number4) / 4;
+
+                // Verifica se a média é maior que cinco
+                if (calcmedia > 5) {
+                    alert("Você passou no teste");
+                } else {
+                    alert("Tente novamente");
+                }
+            } else {
+                alert("Por favor, insira números entre 0 e 10");
+            }
+        }
+    </script>
+</body>
+</html>

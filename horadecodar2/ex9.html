@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Exercicio9</title>
+</head>
+
+<body>
+    <div>
+        <iframe width="914" height="514" src="https://www.youtube.com/embed/Rz0ZnRHpsNc"
+            title="Jovem eleitora, jovem eleitor: bora votar!" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+    <!-- Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu). -->
+    <script>
+        let ano_de_nascimento = parseInt(prompt("Digite seu ano de nascimento"));
+
+        if ((2024 - ano_de_nascimento) >= 16) {
+            alert("Você pode votar esse ano");
+        } else {
+            alert("Você não pode votar");
+        }
+
+    </script>
+</body>
+
+</html>

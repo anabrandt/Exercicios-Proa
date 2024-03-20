@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin:10px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1 >Vamos calcular a média aritmética de um número</h1>
+        <p>Insira 6 valores no Prompt!</p>
+        <button
+        type="button"
+        onclick="mediaAritmetica()"
+        class="btn btn-success"
+        >Clique aqui para calcular a média aritmética</button>
+
+        <img src="/img/nazare.gif">
+    </div>
+    <!-- Faça um programa que leia 6 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos. -->
+    <script>
+        function mediaAritmetica(){
+            let number1 = parseInt(prompt("Digite um número"));
+            let number2 = parseInt(prompt("Digite um número"));
+            let number3 = parseInt(prompt("Digite um número"));
+            let number4 = parseInt(prompt("Digite um número"));
+            let number5 = parseInt(prompt("Digite um número"));
+            let number6 = parseInt(prompt("Digite um número"));
+            let resultado = (number1 + number2+ number3 +number4 + number5+ number6)/6;
+            alert("A média aritimética é "+ resultado);
+        }
+    </script>
+</body>
+</html>

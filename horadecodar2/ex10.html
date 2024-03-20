@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio10</title>
+</head>
+<body>
+    <div>
+        <h1>Vamos descobrir se o seu peso é o ideal?</h1>
+    </div>
+
+    <div>
+        <h1>Feminino</h1>
+        <button
+        id="feminino"
+        type="button"
+        onclick="genderFemale()"
+        >Clique Aqui</button>
+    </div>
+
+    <div>
+        <h1>Masculino</h1>
+        <button
+        id="masculino"
+        type="button"
+        onclick="genderMale()"
+        >Clique Aqui</button>
+    </div>
+    <!-- Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas: -->
+    <script>
+        function genderFemale(){
+            let peso = parseInt(prompt("Qual seu peso?"));
+            let altura = parseFloat(prompt("Qual sua altura?"));
+            let resultadoF = (62.1 * altura)-44.7;
+            alert("O seu peso ideal é " + resultadoF);
+
+        }
+
+        function genderMale(){
+            let peso = parseInt(prompt("Qual seu peso?"));
+            let altura = parseFloat(prompt("Qual sua altura?"));
+            let resultadoM = (62.1*altura)-58;
+            alert("O seu peso ideal é " + resultadoM);
+        }
+    </script>
+</body>
+</html>
