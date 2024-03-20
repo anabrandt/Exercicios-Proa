@@ -2,10 +2,13 @@
 
 <h3>:small_orange_diamond: Exercícios de Lógica - Hora de Codar 1,	exercícios sobre Operadores Matemáticos em JavaScript</h3>
 
-Variável e Exibição de Valor
-Saudação Personalizada
-Informação de Nome e Idade
-Cálculo de Áreas de Figuras Planas
+- `Variável e Exibição de Valor`
+- `Saudação`
+- `Nome e Idade do usuário`
+- `Cálculo da Áreas das Figuras Planas`
+
+
+
 
 # 🛠️Linguagens ultilizadas
 
